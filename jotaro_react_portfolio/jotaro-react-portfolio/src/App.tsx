@@ -7,9 +7,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='flex-row w-full h-full'>
+    <div className='flex w-screen h-screen'>
       <Sidebar/>
-      <Gallery/>
+      {/* <Gallery/> */}
     </div>
   )
 }
