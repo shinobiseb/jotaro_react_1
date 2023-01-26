@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.sidebar-item {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-item:hover {
+    background-color: pink;
+}
