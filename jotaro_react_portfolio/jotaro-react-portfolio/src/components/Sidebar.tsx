@@ -1,13 +1,22 @@
 import React from 'react'
+import { useState } from 'react'
 
-export default function Sidebar(props) {
 
-  
+
+export default function Sidebar() {
+
+  const [open, setOpen] = useState(false)
 
   return (
+    
       <div className='flex flex-col h-screen w-full bg-dark-pink sidebar-bg z-10 sidebar-box'>
 
-        <i className='gg-close close-button'></i>
+        <i className='gg-close close-button'
+        onClick={()=> {
+          setOpen(!open)
+          console.log(open)
+          }
+        }></i>
         
         <div className='flex flex-col h-full w-3/4 bg-dark-pink  p-10 font-sans'>
           
@@ -24,8 +33,9 @@ export default function Sidebar(props) {
             </a></li>
 
             <p className='text-sm mt-5'>
-            jotarokujo@cummingmail.net
-          </p>
+              jotarokujo@cummingmail.net
+            </p>
+
           </ul>
         </div>
     </div>
