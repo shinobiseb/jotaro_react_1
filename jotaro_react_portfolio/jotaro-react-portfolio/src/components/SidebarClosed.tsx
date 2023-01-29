@@ -6,10 +6,10 @@ type stateprops = {
 
 export default function SidebarClosed( stateprops ) {
 
-    console.log(props)
+    console.log(stateprops)
   return (
     <div>
-        <button onClick={props.setOpen} className='rounded-lg border-solid border-2 p-2'>Open Sidebar</button>
+        <button onClick={stateprops.setOpen} className='rounded-lg border-solid border-2 p-2'>Open Sidebar</button>
     </div>
   )
 }
