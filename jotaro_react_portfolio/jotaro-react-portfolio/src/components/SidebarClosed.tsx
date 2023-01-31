@@ -4,12 +4,13 @@ type stateprops = {
     state : any
 }
 
-export default function SidebarClosed( stateprops ) {
+export default function SidebarClosed( state : stateprops ) {
 
-    console.log(stateprops)
   return (
     <div>
-        <button onClick={stateprops.setOpen} className='rounded-lg border-solid border-2 p-2'>Open Sidebar</button>
+        <button 
+        onClick={state.state} 
+        className='rounded-lg border-solid border-2 p-2'>Open Sidebar</button>
     </div>
   )
 }

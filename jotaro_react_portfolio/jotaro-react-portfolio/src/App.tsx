@@ -12,7 +12,9 @@ function App() {
     <div className='flex w-screen h-screen'>
       {
         open
-        ? <Sidebar/>
+        ? <Sidebar 
+        props={setOpen} 
+        />
         : <SidebarClosed 
         state={setOpen} 
         />

@@ -1,22 +1,23 @@
 import React from 'react'
 import { useState } from 'react'
 
+type sidebarprops = {
+  props : any
+}
 
-
-export default function Sidebar() {
-
-  const [open, setOpen] = useState(false)
-
+export default function Sidebar( props : sidebarprops ) {
   return (
     
       <div className='flex flex-col h-screen w-full bg-dark-pink sidebar-bg z-10 sidebar-box'>
 
-        <i className='gg-close close-button'
+        <button 
+        className='close-button' 
         onClick={()=> {
-          setOpen(!open)
-          console.log(open)
-          }
-        }></i>
+          props.props(!open)
+        }}>
+          <i className='gg-close close-button'>
+          </i>
+          </button>
         
         <div className='flex flex-col h-full w-3/4 bg-dark-pink  p-10 font-sans'>
           
