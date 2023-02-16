@@ -6,20 +6,20 @@ type sidebarprops = {
 }
 
 export default function Sidebar( props : sidebarprops ) {
+  
   return (
-    
-      <div className='flex flex-col h-screen w-full bg-dark-pink sidebar-bg z-10 sidebar-box'>
+      <div className='flex flex-col h-screen w-screen bg-dark-pink sidebar-bg z-10 sidebar-box'>
 
         <button 
-        className='close-button' 
+        
         onClick={()=> {
           props.props(!open)
         }}>
           <i className='gg-close close-button'>
           </i>
-          </button>
+        </button>
         
-        <div className='flex flex-col h-full w-3/4 bg-dark-pink  p-10 font-sans'>
+        <div className='flex flex-col h-full w-3/4 bg-dark-pink p-10 font-sans'>
           
           <h1 className='text-left text-xl text-light-pink mb-2'>Jotaro Kujo</h1>
 

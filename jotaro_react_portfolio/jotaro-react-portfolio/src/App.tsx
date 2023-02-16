@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Gallery from './components/Gallery'
 import Sidebar from './components/Sidebar'
 import SidebarClosed from './components/SidebarClosed'
+import Main from './components/Main'
 import "./index.css"
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         state={setOpen} 
         />
       }
+
     </div>
   )
 }
