@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className='flex w-screen h-screen'>
-      {
+      {/* {
         open
         ? <Sidebar 
         props={setOpen} 
@@ -19,8 +19,8 @@ function App() {
         : <SidebarClosed 
         state={setOpen} 
         />
-      }
-
+      } */}
+      <Main/>
     </div>
   )
 }
