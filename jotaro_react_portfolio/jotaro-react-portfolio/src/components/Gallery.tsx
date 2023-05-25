@@ -9,7 +9,7 @@ export default function Gallery() {
 
   function spawnDummies() {
 
-    for(let i = 0; i < 20; i++) {
+    for(let i = 0; i < 10; i++) {
         //create a div
         let newDiv = document.createElement('div')
         //give div id of i
@@ -25,8 +25,7 @@ export default function Gallery() {
 
   return (
     
-    <div id='Gallery' className='flex w-screen border-solid border-2 border-black'>
-      Gallery
+    <div id='Gallery' className='flex flex-wrap flex-row h-screen w-full border-solid justify-around p-6'>
     </div>
   )
 }
