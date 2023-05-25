@@ -2,21 +2,20 @@ import React from 'react'
 import { useState } from 'react'
 
 type sidebarprops = {
-  props : any
+  props : React.Dispatch<React.SetStateAction<any>>;
 }
 
 export default function Sidebar( props : sidebarprops ) {
-  
+
   return (
       <div className='flex flex-col h-screen w-screen bg-dark-pink sidebar-bg z-10 sidebar-box'>
 
         <button 
-        
+        className='close-button'
         onClick={()=> {
           props.props(!open)
         }}>
-          <i className='gg-close close-button'>
-          </i>
+          X
         </button>
         
         <div className='flex flex-col h-full w-3/4 bg-dark-pink p-10 font-sans'>

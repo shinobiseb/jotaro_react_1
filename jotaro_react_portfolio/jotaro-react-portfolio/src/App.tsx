@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Gallery from './components/Gallery'
 import Sidebar from './components/Sidebar'
 import SidebarClosed from './components/SidebarClosed'
-import Main from './components/Main'
+import Container from './components/Container'
 import "./index.css"
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className='flex w-screen h-screen'>
-      {/* {
+      {
         open
         ? <Sidebar 
         props={setOpen} 
@@ -19,8 +19,8 @@ function App() {
         : <SidebarClosed 
         state={setOpen} 
         />
-      } */}
-      <Main/>
+      }
+      <Container/>
     </div>
   )
 }
