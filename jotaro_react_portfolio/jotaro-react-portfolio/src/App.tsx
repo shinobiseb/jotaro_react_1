@@ -9,18 +9,23 @@ function App() {
 
   const [open, setOpen] = useState(false)
 
+  const [comp, setComp] = useState("Gallery")
+
+
+
   return (
     <div className='flex w-screen h-screen'>
       {
         open
         ? <Sidebar 
         props={setOpen} 
+        setState={setComp}
         />
         : <SidebarClosed 
         state={setOpen} 
         />
       }
-      <Container/>
+      <Container comp={comp}/>
     </div>
   )
 }
