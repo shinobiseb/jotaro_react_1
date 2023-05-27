@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .sidebar-link:hover {
-    transition: 250ms;
+    transition: 150ms;
     color: lightpink;
 }
 

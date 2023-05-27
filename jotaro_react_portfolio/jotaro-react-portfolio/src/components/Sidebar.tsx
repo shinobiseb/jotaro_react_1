@@ -25,16 +25,16 @@ export default function Sidebar( {props, setState} : sidebarprops ) {
 
           <ul className='flex flex-col text-xl h-1/3 justify-evenly w-full'>
             <li className='sidebar-link'>
-              <a href="#gallery">Gallery</a>
+              <a onClick={()=> setState('Gallery')} href="#gallery">Gallery</a>
             </li>
             <li className='sidebar-link'>
-              <a href="#other">Other</a>
+              <a onClick={()=> setState('Other')} href="#other">Other</a>
             </li>
             <li className='sidebar-link'>
-              <a href="#contact">Contact</a>
+              <a onClick={()=> setState('Contact')} href="#contact">Contact</a>
             </li>
             <li className='sidebar-link'>
-              <a href="#about">About</a>
+              <a onClick={()=> setState('About')} href="#about">About</a>
             </li>
 
             {/* <p className='text-sm mt-5'>
