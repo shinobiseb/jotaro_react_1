@@ -25,3 +25,16 @@
     border: 1px solid red;
     margin: 1px;
 }
+
+.contact-header {
+    padding: 3rem;
+}
+
+.contact-link {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+.contact-link:hover {
+    cursor: pointer;
+}
