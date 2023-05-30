@@ -7,10 +7,10 @@ type stateprops = {
 export default function SidebarClosed( state : stateprops ) {
 
   return (
-    <div className='bg-dark-pink'>
+    <div className='bg-light-pink border-r-[1px]'>
         <button 
         onClick={state.state} 
-        className='p-2 bg-dark-pink'>
+        className='p-2 bg-light-pink'>
           =
         </button>
     </div>

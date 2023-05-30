@@ -5,6 +5,7 @@ specifiers:
   '@types/react-dom': ^18.0.9
   '@vitejs/plugin-react': ^3.0.0
   autoprefixer: ^10.4.13
+  css.gg: ^2.0.0
   postcss: ^8.4.21
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -13,6 +14,7 @@ specifiers:
   vite: ^4.0.0
 
 dependencies:
+  css.gg: 2.0.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -677,6 +679,10 @@ packages:
   /convert-source-map/1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
     dev: true
+
+  /css.gg/2.0.0:
+    resolution: {integrity: sha512-8qO59kSXLbewo7xaUM4eC8328MTdGmb8atpmw6PRzeDGsZrCkAVjJzKeFDIntagl1/aCee+NG1OQtIvWAjgG/A==}
+    dev: false
 
   /cssesc/3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
