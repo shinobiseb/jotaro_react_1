@@ -3,6 +3,7 @@ import Gallery from './components/Gallery'
 import Sidebar from './components/Sidebar'
 import SidebarClosed from './components/SidebarClosed'
 import Container from './components/Container'
+import { motion } from "framer-motion"
 import "./index.css"
 
 function App() {
