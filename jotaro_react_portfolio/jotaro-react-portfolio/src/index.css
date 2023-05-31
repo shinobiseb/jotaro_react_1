@@ -39,3 +39,8 @@
 .contact-link:hover {
     cursor: pointer;
 }
+
+.dummyImg {
+    width: 2em;
+    height: 2em;
+}

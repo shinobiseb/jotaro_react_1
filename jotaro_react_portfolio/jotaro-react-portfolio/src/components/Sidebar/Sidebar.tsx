@@ -20,11 +20,11 @@ export default function Sidebar( {props} : sidebarprops ) {
         
         <div className='flex flex-col h-full w-full bg-light-pink font-sans px-10 py-5'>
           
-          <h1 className='text-left text-3xl text-pink mb-5'>
+          <h1 className='text-left text-xl lg:text-3xl text-pink mb-5'>
             Mika Ervin
           </h1>
 
-          <ul className='flex flex-col text-lg h-full w-full'>
+          <ul className='flex flex-col text-sm lg:text-lg h-full w-full'>
             <li className='sidebar-link'>
               <Link to='/'>Gallery</Link>
             </li>
@@ -53,7 +53,7 @@ export default function Sidebar( {props} : sidebarprops ) {
               <Link to='/conceptart'>Concept Art</Link>
             </li>
 
-            <p className='text-sm mt-10'>mikaervin@gmail.com</p>
+            <p className='sm:flex hidden text-xs md:text-sm mt-10'>mikaervin@gmail.com</p>
 
           </ul>
         </div>

@@ -23,6 +23,8 @@ export default function Gallery() {
     spawnDummies()
   }, []);
 
+  
+
   return (
     
     <div id='Gallery' className='flex flex-wrap flex-row h-screen w-full border-solid justify-around p-6'>

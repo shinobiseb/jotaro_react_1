@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function SeniorThesis() {
+
+  const imageArr : any = []
+
+  useEffect(()=> {
+    const senior = document.getElementById('seniordiv')
+  
+  }, []);
+
   return (
-    <div>SeniorThesis</div>
+
+
+    <div id='seniordiv'>SeniorThesis</div>
   )
 }
