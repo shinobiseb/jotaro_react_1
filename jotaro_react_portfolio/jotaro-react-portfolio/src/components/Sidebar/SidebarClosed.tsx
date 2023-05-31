@@ -7,7 +7,7 @@ type stateprops = {
 export default function SidebarClosed( state : stateprops ) {
 
   return (
-    <div className='bg-light-pink p-3 flex align-center items-center'>
+    <div className='bg-light-pink p-3 flex align-center items-center border-b-[1px]'>
       
         <button 
         onClick={state.state} 
