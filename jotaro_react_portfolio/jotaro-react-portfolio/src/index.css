@@ -8,7 +8,6 @@
 }
 
 .sidebar-link {
-    margin: 10px 0px;
     color: #1B1725;
 }
 
@@ -25,10 +24,6 @@
     background-color: aqua;
     border: 1px solid red;
     margin: 1px;
-}
-
-.contact-header {
-    padding: 2rem;
 }
 
 .contact-link {

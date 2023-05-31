@@ -18,7 +18,7 @@ function App() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className='flex w-screen h-screen'>
+    <div className='flex w-screen h-screen flex-col sm:flex-row'>
       {
         open
         ? <Sidebar 
