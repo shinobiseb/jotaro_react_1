@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Gallery from './components/Gallery'
 import Sidebar from './components/Sidebar/Sidebar'
 import SidebarClosed from './components/Sidebar/SidebarClosed'
-import { motion } from "framer-motion"
 import { Route, Routes } from 'react-router-dom'
 
 import "./index.css"
