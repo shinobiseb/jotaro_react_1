@@ -1,16 +1,12 @@
 export default function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
-    const senior = document.getElementById('seniordiv')
-    const galleryS = document.getElementById('Gallery')
-
     for(let i = 0; i < arr.length; i++) {
       let imgC = document.createElement('img')
       imgC.setAttribute('src', `${arr[i]}`)
       imgC.setAttribute('id', `img${i}`)
       imgC.setAttribute('class', `gallery-img`)
       container?.appendChild(imgC)
-      console.log(imgC)
     }
-        console.log('I fired once')
+    console.log('I fired once')
 }
 
 export const galleryLinks : Array<string>  = [
