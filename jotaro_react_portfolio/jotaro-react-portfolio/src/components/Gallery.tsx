@@ -1,36 +1,15 @@
 import React from 'react'
 import { useEffect } from 'react'
+import imgSpawner, { galleryLinks } from '../assets/Imageurls';
 
 export default function Gallery() {
 
   useEffect(()=> {
-  const galleryImgs = [
-    "https://i.imgur.com/m4nvOEU.png",
-    "https://i.imgur.com/GnPQlI1.png",
-    "https://i.imgur.com/zRKNJfq.jpg",
-    "https://i.imgur.com/tEE80yR.png",
-    "https://i.imgur.com/poeDfRV.png",
-    "https://i.imgur.com/TFgDhEu.jpg",
-    "https://i.imgur.com/oLdF5dA.png",
-    "https://i.imgur.com/DR4CWtR.jpg",
-    "https://i.imgur.com/XqQyAQo.jpg",
-    "https://i.imgur.com/ILezUzh.jpg",
-  ]
 
-  const galleryS = document.getElementById('Gallery')
+    const galleryC = document.getElementById('Gallery')
+    imgSpawner(galleryLinks, galleryC)
 
-  function imgSpawner() {
-    for(let i = 0; i < galleryImgs.length; i++) {
-      let imgC = document.createElement('img')
-      imgC.setAttribute('src', `${galleryImgs[i]}`)
-      imgC.setAttribute('id', `img${i}`)
-      imgC.setAttribute('class', `gallery-img`)
-      galleryS?.appendChild(imgC)
-    }
-  }
-
-  imgSpawner()
-  }, [])
+  }, []);
 
   return (
     

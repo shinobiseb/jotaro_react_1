@@ -1,17 +1,19 @@
 import React, { useEffect } from 'react'
+import { seniorThesisLinks } from '../assets/Imageurls';
+import imgSpawner from '../assets/Imageurls';
 
 export default function SeniorThesis() {
 
-  const imageArr : any = []
-
   useEffect(()=> {
-    const senior = document.getElementById('seniordiv')
-  
+
+    const seniorThesisCont = document.getElementById('seniordiv')
+    imgSpawner(seniorThesisLinks, seniorThesisCont)
+
   }, []);
 
   return (
 
 
-    <div id='seniordiv'>SeniorThesis</div>
+    <div id='seniordiv'></div>
   )
 }
