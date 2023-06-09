@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
 import { seniorThesisLinks } from '../assets/Imageurls';
-import imgSpawner from '../assets/Imageurls';
+import { imgSpawner } from '../assets/Imageurls';
 
-let didInit = false
 
 export default function SeniorThesis() {
 
@@ -15,6 +14,6 @@ export default function SeniorThesis() {
   return (
 
 
-    <div id='seniordiv'></div>
+    <div className='h-full w-full flex flex-row flex-wrap justify-center' id='seniordiv'></div>
   )
 }

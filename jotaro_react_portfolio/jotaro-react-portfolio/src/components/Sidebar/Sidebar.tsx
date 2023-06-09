@@ -31,34 +31,10 @@ export default function Sidebar( {props} : sidebarprops ) {
             Mika Ervin
           </h1>
 
+
+          {/*---------- SIDEBAR LIST ----------*/}
+
           <ul className='flex flex-col justify-evenly text-center text-2xl lg:text-lg h-full w-full'>
-            <li className='sidebar-link'>
-              <Link to='/' 
-                onClick={()=> {
-                props(!open)
-              }}>Gallery</Link>
-            </li>
-
-            <li className='sidebar-link'>
-              <Link to='/about'
-               onClick={()=> {
-                props(!open)
-              }}>About</Link>
-            </li>
-
-            <li className='sidebar-link'>
-              <Link to='/contact'
-               onClick={()=> {
-                props(!open)
-              }}>Contact</Link>
-            </li>
-
-            <li className='sidebar-link'>
-              <Link to='/seniorthesis'
-               onClick={()=> {
-                props(!open)
-              }}>Senior Thesis</Link>
-            </li>
 
             <li className='sidebar-link'>
               <Link to='/animations'
@@ -79,6 +55,27 @@ export default function Sidebar( {props} : sidebarprops ) {
                onClick={()=> {
                 props(!open)
               }}>Concept Art</Link>
+            </li>
+
+            <li className='sidebar-link'>
+              <Link to='/seniorthesis'
+               onClick={()=> {
+                props(!open)
+              }}>Senior Thesis</Link>
+            </li>
+
+            <li className='sidebar-link'>
+              <Link to='/about'
+               onClick={()=> {
+                props(!open)
+              }}>About</Link>
+            </li>
+
+            <li className='sidebar-link'>
+              <Link to='/contact'
+               onClick={()=> {
+                props(!open)
+              }}>Contact</Link>
             </li>
 
             <p className='sm:flex hidden text-xs md:text-sm mt-10'>mikaervin@gmail.com</p>

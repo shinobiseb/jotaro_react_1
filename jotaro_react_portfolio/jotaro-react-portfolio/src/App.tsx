@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Gallery from './components/Gallery'
 import Sidebar from './components/Sidebar/Sidebar'
 import SidebarClosed from './components/Sidebar/SidebarClosed'
 import { Route, Routes } from 'react-router-dom'
@@ -29,7 +28,6 @@ function App() {
       }
 
       <Routes>
-        <Route path="/" element={<Gallery/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/seniorthesis" element={<SeniorThesis/>}/>

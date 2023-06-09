@@ -1,4 +1,6 @@
-export default function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
+// ------------------- SPAWNERS ------------------- //
+
+function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
     for(let i = 0; i < arr.length; i++) {
       let imgC = document.createElement('img')
       imgC.setAttribute('src', `${arr[i]}`)
@@ -9,46 +11,60 @@ export default function imgSpawner(arr : Array<string>, container : HTMLElement 
     console.log('I fired once')
 }
 
-export const galleryLinks : Array<string>  = [
-    "https://i.imgur.com/m4nvOEU.png",
-    "https://i.imgur.com/GnPQlI1.png",
-    "https://i.imgur.com/zRKNJfq.jpg",
-    "https://i.imgur.com/tEE80yR.png",
-    "https://i.imgur.com/poeDfRV.png",
-    "https://i.imgur.com/TFgDhEu.jpg",
-    "https://i.imgur.com/oLdF5dA.png",
-    "https://i.imgur.com/DR4CWtR.jpg",
-    "https://i.imgur.com/XqQyAQo.jpg",
-    "https://i.imgur.com/ILezUzh.jpg",
-  ]
+function vidSpawner(arr : Array<string>, container : HTMLElement | null ) {
+    for(let i = 0; i < arr.length; i++) {
+      let vidC = document.createElement('video')
+      let sourceC = document.createElement('source')
+      vidC.setAttribute('width', '320')
+      vidC.setAttribute('height', 'auto')
+      vidC.setAttribute('controls', '')
+      sourceC.setAttribute('src', `${arr[i]}`)
+      sourceC.setAttribute('class', `gallery-vid`)
+      sourceC.setAttribute('type', 'video/mp4')
+      vidC.appendChild(sourceC)
+      container?.appendChild(vidC)
+    }
+    console.log('I shot once')
+}
+
+export {vidSpawner, imgSpawner}
 
   export const animationsLinks : Array<string>  = [
-    'https://i.imgur.com/62QTOuu.mp4',
     'https://i.imgur.com/m8rNurQ.mp4',
+    'https://i.imgur.com/RLYxas9.mp4',
+    'https://i.imgur.com/TnswO1c.mp4',
+    'https://i.imgur.com/62QTOuu.mp4',
+    'https://i.imgur.com/G53pgxS.mp4',
+    'https://i.imgur.com/PhOTqy5.mp4',
     'https://i.imgur.com/DaFSSF6.mp4',
     'https://i.imgur.com/UEnsU1D.mp4',
-    'https://i.imgur.com/RQveGEu.mp4',
-    'https://i.imgur.com/TIdiJGv.mp4',
-    'https://i.imgur.com/TnswO1c.mp4',
-    'https://i.imgur.com/RLYxas9.mp4',
-    'https://i.imgur.com/G53pgxS.mp4',
+    'https://i.imgur.com/A8kd5zs.mp4',
   ]
 
   export const seniorThesisLinks : Array<string> = [
-    'https://i.imgur.com/tEE80yR.png',
-    'https://i.imgur.com/poeDfRV.png',
-    'https://i.imgur.com/CXvJxqP.png',
-    'https://i.imgur.com/ILezUzh.jpg',
-    'https://i.imgur.com/gLIMh1g.png',
-    'https://i.imgur.com/o2W1NPH.jpg',
-    'https://i.imgur.com/RG3kgki.jpg',
-    'https://i.imgur.com/ithH8fB.png',
-    'https://i.imgur.com/I3f53WR.jpg',
-    'https://i.imgur.com/b9cJn4L.png',
-    'https://i.imgur.com/FQtofu5.png',
-    'https://i.imgur.com/jn05Qgw.jpg',
-    'https://i.imgur.com/5PXwCEn.png',
-    'https://i.imgur.com/GnPQlI1.png',
+    'https://i.imgur.com/GnPQlI1l.png',
+    'https://i.imgur.com/tEE80yRl.png',
+    'https://i.imgur.com/jn05Qgwl.jpg',
+    'https://i.imgur.com/CXvJxqPl.png',
+    'https://i.imgur.com/ILezUzhl.jpg',
+    'https://i.imgur.com/FQtofu5l.png',
+    'https://i.imgur.com/ujzBKRsl.png',
+    'https://i.imgur.com/1IcPw6xl.png',
+    'https://i.imgur.com/Bcj2eSbl.png',
+    'https://i.imgur.com/gLIMh1gl.png',
+    'https://i.imgur.com/b9cJn4Ll.png',
+    'https://i.imgur.com/RG3kgkil.jpg',
+    'https://i.imgur.com/nF5vS96l.png',
+    'https://i.imgur.com/EupytGql.jpg',
+    'https://i.imgur.com/867ocBYl.png',
+    'https://i.imgur.com/OY2kRjnl.jpg',
+    'https://i.imgur.com/9AlRn1Yl.png',
+    'https://i.imgur.com/DR4CWtRl.jpg',
+    'https://i.imgur.com/Pl3EVpbl.png',
+    'https://i.imgur.com/o1jZkPdl.png',
+    'https://i.imgur.com/9szkCmcl.png',
+    'https://i.imgur.com/r9qQsEul.png',
+    'https://i.imgur.com/poeDfRVl.png',
   ]
 
   export const conceptArtLinks : Array<string> = [
@@ -64,3 +80,4 @@ export const galleryLinks : Array<string>  = [
   'https://i.imgur.com/SuiuXgE.',
   'https://i.imgur.com/Wrl4gPK.',
   ]
+
