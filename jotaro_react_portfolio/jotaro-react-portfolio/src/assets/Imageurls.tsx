@@ -11,23 +11,7 @@ function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
     console.log('I fired once')
 }
 
-function vidSpawner(arr : Array<string>, container : HTMLElement | null ) {
-    for(let i = 0; i < arr.length; i++) {
-      let vidC = document.createElement('video')
-      let sourceC = document.createElement('source')
-      vidC.setAttribute('width', '320')
-      vidC.setAttribute('height', 'auto')
-      vidC.setAttribute('controls', '')
-      sourceC.setAttribute('src', `${arr[i]}`)
-      sourceC.setAttribute('class', `gallery-vid`)
-      sourceC.setAttribute('type', 'video/mp4')
-      vidC.appendChild(sourceC)
-      container?.appendChild(vidC)
-    }
-    console.log('I shot once')
-}
-
-export {vidSpawner, imgSpawner}
+export {imgSpawner}
 
   export const animationsLinks : Array<string>  = [
     'https://i.imgur.com/m8rNurQ.mp4',
