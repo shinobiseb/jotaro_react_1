@@ -1,5 +1,5 @@
 import React from 'react'
-import { imgSpawner } from '../assets/Imageurls'
+import  {imgSpawner}  from '../assets/Imageurls'
 import { conceptArtLinks } from '../assets/Imageurls'
 import { useEffect } from 'react'
 

@@ -36,8 +36,22 @@
     padding: 3px;
 }
 
+.gallery-img:hover {
+    cursor: pointer;
+}
+
 .gallery-vid {
     width: 320px;
     height: auto;
     margin: 10px;
+}
+
+/* --------- Modal --------- */
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.829);
+}
+
+.modal {
+    background-color: rgba(240, 128, 128, 0.171);
 }

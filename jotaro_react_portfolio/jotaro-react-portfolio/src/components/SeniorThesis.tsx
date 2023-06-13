@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { seniorThesisLinks } from '../assets/Imageurls';
-import imgSpawner from '../assets/Imageurls';
+import {imgSpawner} from '../assets/Imageurls';
 
 let didInit = false
 

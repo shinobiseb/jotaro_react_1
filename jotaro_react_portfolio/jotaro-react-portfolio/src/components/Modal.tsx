@@ -3,14 +3,14 @@ import { useState } from 'react'
 
 export default function Modal() {
 
-    const [modalstate, setModalState] = useState(false)
+    const [modalstate, setModalState] = useState(true)
 
     return (
     <div className='fixed'>
 
         {
         modalstate ? 
-                <div className='fixed flex items-center justify-center z-3 h-screen w-screen overlay'>
+            <div className='fixed flex items-center justify-center z-3 h-screen w-screen overlay'>
 
                 <div className='flex flex-col items-center justify-center w-5/6 h-3/4 border bg-slate drop-shadow-md z-5 fixed modal'>
     

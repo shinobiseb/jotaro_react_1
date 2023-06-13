@@ -1,7 +1,15 @@
+
+
 // ------------------- SPAWNERS ------------------- //
 
+export function handleShow(){
+  console.log('it worked!')
+}
+
 function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
-    for(let i = 0; i < arr.length; i++) {
+  
+  for(let i = 0; i < arr.length; i++) {
+
       let imgC = document.createElement('img')
       imgC.setAttribute('src', `${arr[i]}`)
       imgC.setAttribute('id', `img${i}`)
@@ -11,7 +19,7 @@ function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
     console.log('I fired once')
 }
 
-export {imgSpawner}
+
 
   export const animationsLinks : Array<string>  = [
     'https://i.imgur.com/m8rNurQ.mp4',
@@ -23,6 +31,7 @@ export {imgSpawner}
     'https://i.imgur.com/DaFSSF6.mp4',
     'https://i.imgur.com/UEnsU1D.mp4',
     'https://i.imgur.com/A8kd5zs.mp4',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1024px-Image_created_with_a_mobile_phone.png'
   ]
 
   export const seniorThesisLinks : Array<string> = [
@@ -65,3 +74,4 @@ export {imgSpawner}
   'https://i.imgur.com/Wrl4gPK.',
   ]
 
+export {imgSpawner}
