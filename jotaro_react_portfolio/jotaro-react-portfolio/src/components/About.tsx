@@ -12,8 +12,6 @@ export default function About() {
         <br/>
         In 2017, I embraced art as a serious hobby and even had the chance to work on commissioned projects. However, I soon realized that I yearned for greater fulfillment. This realization led me to make a life-changing decision—to pursue a Bachelor of Fine Arts in Animation. I graduated from Villa Maria College of Buffalo, equipped with the skills and knowledge to bring my artistic visions to life through animation.
       </p>
-
-      <Modal/>
     </div>
   )
 }

@@ -10,6 +10,7 @@ import Animations from './components/Animations'
 import SeniorThesis from './components/SeniorThesis'
 import Storyboards from './components/Storyboards'
 import Conceptart from './components/Conceptart'
+import Modeling from './components/Modeling'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Animations/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/modeling" element={<Modeling/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/seniorthesis" element={<SeniorThesis/>}/>
         <Route path="/animations" element={<Animations/>}/>

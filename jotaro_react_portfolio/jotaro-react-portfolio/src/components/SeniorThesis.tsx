@@ -3,7 +3,7 @@ import { seniorThesisLinks } from '../assets/Imageurls';
 import { imgSpawner } from '../assets/Imageurls';
 import Modal from './Modal';
 
-export default function Animations() {
+export default function SeniorThesis() {
   const [modalState, setModalState] = useState(false);
   const [selectedContent, setSelectedContent] = useState('');
 

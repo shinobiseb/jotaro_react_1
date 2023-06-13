@@ -1,33 +1,43 @@
-import React from 'react'
-import { useEffect } from 'react'
+import React, { useEffect, useState } from 'react';
+import { ModelLinks } from '../assets/Imageurls';
+import { imgSpawner } from '../assets/Imageurls';
+import Modal from './Modal';
 
 export default function Modeling() {
+  const [modalState, setModalState] = useState(false);
+  const [selectedContent, setSelectedContent] = useState('');
 
   useEffect(() => {
-  
-  const modeling = document.getElementById("modeling")
+    const container = document.getElementById('modelingCont');
+    imgSpawner(ModelLinks, container);
 
-  function spawnDummies() {
+    const handleClick = (event : any) => {
+      const dataContent = event.target.getAttribute('src');
+      setSelectedContent(dataContent);
+      setModalState(true);
+    };
 
-    for(let i = 0; i < 10; i++) {
-        //create a div
-        let newDiv = document.createElement('div')
-        //give div id of i
-        newDiv.setAttribute("id", `div${i}`)
-        newDiv.setAttribute("class", `dummyDiv`)
-        //append div to modeling
-        modeling?.appendChild(newDiv)
+    if (container) {
+      for (const child of container.children) {
+        child.addEventListener('click', handleClick);
+      }
     }
-  }
 
-    // spawnDummies()
+    return () => {
+      if (container) {
+        for (const child of container.children) {
+          child.removeEventListener('click', handleClick);
+        }
+      }
+    };
   }, []);
 
-  
-
   return (
-    
-    <div id='Modeling' className='flex flex-wrap flex-row h-screen w-full border-solid justify-around p-6'>
-    </div>
-  )
+    <>
+      <Modal content={selectedContent} state={modalState} setState={setModalState} />
+      <button></button>
+      <div className='h-full w-full flex flex-row flex-wrap justify-center' id='modelingCont'>
+      </div>
+    </>
+  );
 }
