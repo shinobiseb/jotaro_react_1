@@ -31,7 +31,7 @@
 
 .gallery-img {
     object-fit: cover;
-    width: 10rem;
+    width: 7em;
     height: auto;
     padding: 3px;
 }

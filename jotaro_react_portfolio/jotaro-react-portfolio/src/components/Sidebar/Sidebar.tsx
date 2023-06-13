@@ -50,12 +50,12 @@ export default function Sidebar( {props} : sidebarprops ) {
               }}>3d Models</Link>
             </li>
 
-            <li className='sidebar-link'>
+            {/* <li className='sidebar-link'>
               <Link to='/storyboards'
                onClick={()=> {
                 props(!open)
               }}>Storyboards</Link>
-            </li>
+            </li> */}
             
             <li className='sidebar-link'>
               <Link to='/conceptart'
