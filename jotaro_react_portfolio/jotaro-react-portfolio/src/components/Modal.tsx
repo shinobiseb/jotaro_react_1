@@ -8,7 +8,7 @@ type modalProps = {
 
 export default function Modal(props: modalProps) {
 
-console.log(props)
+    const modifiedContent = props.content.slice(0, -5) + 'h' + props.content.slice(-4);
 
   const handleClose = () => {
     props.setState(false);
@@ -23,7 +23,7 @@ console.log(props)
             {typeof props.content === 'string' && props.content.includes('.mp4') ? (
               <video src={props.content} controls autoPlay />
             ) : (
-              <img src={props.content} alt='Modal Content' />
+              <img src={modifiedContent} alt='Modal Content' />
             )}
           </div>
         </div>
