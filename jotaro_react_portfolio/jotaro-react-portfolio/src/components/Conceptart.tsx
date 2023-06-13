@@ -1,42 +1,42 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { altConceptArtLinks } from '../assets/Imageurls';
 import { imgSpawner } from '../assets/Imageurls';
 import Modal from './Modal';
 
-export default function ConceptArt() {
+export default function Conceptart() {
   const [modalState, setModalState] = useState(false);
   const [selectedContent, setSelectedContent] = useState('');
 
-  useEffect(() => {
-    const container = document.getElementById('conceptCont');
-    imgSpawner(altConceptArtLinks, container);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
-    const handleClick = (event : any) => {
-      const dataContent = event.target.getAttribute('src');
-      setSelectedContent(dataContent);
-      setModalState(true);
-    };
+  useEffect(() => {
+    const container = containerRef.current;
 
     if (container) {
-      for (const child of container.children) {
+      imgSpawner(altConceptArtLinks, container);
+
+      const handleClick = (event: Event) => {
+        const dataSrc = (event.target as HTMLImageElement).getAttribute('src');
+        setSelectedContent(dataSrc || '');
+        setModalState(true);
+      };
+
+      for (const child of container?.children || []) {
         child.addEventListener('click', handleClick);
       }
-    }
 
-    return () => {
-      if (container) {
-        for (const child of container.children) {
+      return () => {
+        for (const child of container?.children || []) {
           child.removeEventListener('click', handleClick);
         }
-      }
-    };
+      };
+    }
   }, []);
 
   return (
     <>
       <Modal content={selectedContent} state={modalState} setState={setModalState} />
-      <button></button>
-      <div className='h-full w-full flex flex-row flex-wrap justify-center' id='conceptCont'>
+      <div className='h-full w-full flex flex-row flex-wrap justify-center' id='conceptCont' ref={containerRef}>
       </div>
     </>
   );

@@ -1,10 +1,6 @@
 
 
-// ------------------- SPAWNERS ------------------- //
-
-export function handleShow(){
-  console.log('it worked!')
-}
+// ------------------- SPAWNER ------------------- //
 
 function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
   
@@ -19,7 +15,7 @@ function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
     console.log('I fired once')
 }
 
-
+// ------------------- LINKS ------------------- //
 
   export const animationsLinks : Array<string>  = [
     'https://i.imgur.com/m8rNurQ.mp4',
