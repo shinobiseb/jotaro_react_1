@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion' 
+import { useMediaQuery } from 'react-responsive'
 
 type sidebarprops = {
   props : React.Dispatch<React.SetStateAction<any>>;
@@ -8,13 +9,19 @@ type sidebarprops = {
 
 export default function Sidebar( {props} : sidebarprops ) {
 
+  const isBigScreen = useMediaQuery({ minWidth: 768 })
+
+  const sidebarAnimation = {
+    initial: { y: isBigScreen ? -500 : -100 },
+    animate: { y: 0 },
+    transition: { ease: 'easeOut' }
+  }
+
   return (
       <motion.div 
-      transition={{
-        ease: "easeOut",
-      }}
-      initial={{y: -500}}
-      animate={{y: 0}} 
+      initial={sidebarAnimation.initial}
+      animate={sidebarAnimation.animate}
+      transition={sidebarAnimation.transition}
       className='flex flex-col-reverse items-center justify-center sm:flex-col h-3/4 w-full sm:w-1/3 bg-light-pink sidebar-bg z-10 sidebar-box border-b-[1px] sm:border-r-[1px] fixed'>
         <div className='flex w-full sm:flex-end sm:items-end justify-center sm:justify-end p-4 sm:pt-3 sm:pr-3'>
           <i className="gg-close close-button" 

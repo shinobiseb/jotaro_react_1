@@ -29,6 +29,18 @@
 
 /*------------ Gallery ----------------*/
 
+/* h-full w-full flex flex-row flex-wrap justify-center */
+
+.gallery{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
 .gallery-img {
     object-fit: cover;
     width: 7em;

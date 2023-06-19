@@ -36,7 +36,7 @@ export default function Animations() {
   return (
     <>
       <Modal content={selectedContent} state={modalState} setState={setModalState} />
-      <div className='h-full w-full flex flex-row flex-wrap justify-center' id='animationsCont' ref={containerRef}>
+      <div className='gallery' id='animationsCont' ref={containerRef}>
       </div>
     </>
   );

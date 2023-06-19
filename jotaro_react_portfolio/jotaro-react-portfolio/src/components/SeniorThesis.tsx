@@ -36,7 +36,7 @@ export default function SeniorThesis() {
   return (
     <>
       <Modal content={selectedContent} state={modalState} setState={setModalState} />
-      <div className='h-full w-full flex flex-row flex-wrap justify-center' id='seniorCont' ref={containerRef}>
+      <div className='gallery' id='seniorCont' ref={containerRef}>
       </div>
     </>
   );
