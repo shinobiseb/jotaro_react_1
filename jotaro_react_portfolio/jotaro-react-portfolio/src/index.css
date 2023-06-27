@@ -42,6 +42,7 @@
 
 .gallery-img {
     object-fit: cover;
+    padding: 2px;
     width: 50%;
     height: auto;
 
