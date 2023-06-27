@@ -28,7 +28,7 @@ export default function Sidebar( {props} : sidebarprops ) {
       initial={sidebarAnimation.initial}
       animate={sidebarAnimation.animate}
       transition={sidebarAnimation.transition}
-      className='flex flex-col-reverse items-center justify-center sm:flex-col h-3/4 w-full sm:w-1/3 sm:h-full bg-light-pink sidebar-bg z-10 border-b-[1px] sm:border-r-[1px] fixed'>
+      className='flex flex-col-reverse items-center justify-center sm:flex-col h-3/4 w-full sm:w-1/3 sm:h-full bg-light-pink sidebar-bg z-10 border-b-[1px] sm:border-r-[1px] fixed sm:max-w-sm'>
         <div className='flex sm:flex-end sm:items-end justify-center w-full sm:justify-end p-4 sm:pt-3 sm:pr-3'>
           <i className="gg-close close-button" 
           onClick={()=> {
@@ -48,7 +48,7 @@ export default function Sidebar( {props} : sidebarprops ) {
 
           {/*---------- SIDEBAR LIST ----------*/}
 
-          <ul className='flex flex-col justify-evenly text-center sm:text-left text-2xl lg:text-lg h-full w-full'>
+          <ul className='flex flex-col text-center justify-evenly sm:justify-start sm:text-left text-xl h-1/2 w-full sm:mt-10'>
 
             <li className='sidebar-link'>
               <Link to='/animations'
@@ -99,9 +99,9 @@ export default function Sidebar( {props} : sidebarprops ) {
               }}>Contact</Link>
             </li>
 
-            <p className='sm:flex hidden text-xs md:text-sm mt-10'>mikaervin@gmail.com</p>
-
           </ul>
+
+          <p className='sm:flex hidden text-xs md:text-sm '>mikaervin@gmail.com</p>
         </div>
     </motion.div>
   )

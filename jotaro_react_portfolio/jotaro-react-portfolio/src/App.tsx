@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Sidebar from './components/Sidebar/Sidebar'
 import SidebarClosed from './components/Sidebar/SidebarClosed'
 import { Route, Routes } from 'react-router-dom'
@@ -16,7 +16,22 @@ function App() {
 
   const [open, setOpen] = useState(false);
 
-  
+  // const [windowSize, setWindowSize] = useState([
+  //   window.innerWidth,
+  //   window.innerHeight,
+  // ]);
+
+  // useEffect(() => {
+  //   const handleWindowResize = () => {
+  //     setWindowSize([window.innerWidth, window.innerHeight]);
+  //   };
+
+  //   window.addEventListener('resize', handleWindowResize);
+
+  //   return () => {
+  //     window.removeEventListener('resize', handleWindowResize);
+  //   };
+  // }, []);
 
   return (
     <div className='flex w-screen h-screen flex-col sm:flex-row'>

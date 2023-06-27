@@ -11,6 +11,7 @@
 
 .sidebar-link {
     color: #1B1725;
+    margin: 10px 0;
 }
 
 .contact-link {
@@ -50,6 +51,9 @@
 @media screen and (min-width: 640px) {
     .gallery-img {
         width: 10em;
+    }
+    .gallery {
+        margin: 0 2rem;
     }
 }
 
