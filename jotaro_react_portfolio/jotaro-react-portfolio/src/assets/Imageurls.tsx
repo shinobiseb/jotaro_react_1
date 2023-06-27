@@ -27,7 +27,6 @@ function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
     'https://i.imgur.com/DaFSSF6.mp4',
     'https://i.imgur.com/UEnsU1D.mp4',
     'https://i.imgur.com/A8kd5zs.mp4',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1024px-Image_created_with_a_mobile_phone.png',
   ]
 
   export const seniorThesisLinks : Array<string> = [
