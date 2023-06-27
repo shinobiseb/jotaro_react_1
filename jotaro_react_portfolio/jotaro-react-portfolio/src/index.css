@@ -43,7 +43,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid 1px red;
 }
 
 .gallery-img {
