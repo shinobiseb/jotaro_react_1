@@ -61,7 +61,7 @@ export default function Sidebar( {props} : sidebarprops ) {
               <Link to='/modeling'
                onClick={()=> {
                 props(!open)
-              }}>3d Models</Link>
+              }}>3D Modeling</Link>
             </li>
 
             {/* <li className='sidebar-link'>
