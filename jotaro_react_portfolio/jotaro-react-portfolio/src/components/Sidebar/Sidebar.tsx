@@ -41,14 +41,14 @@ export default function Sidebar( {props} : sidebarprops ) {
         
         <div className='flex flex-col h-full bg-light-pink font-sans px-4 sm:px-10 sm:py-5'>
           
-          <h1 className='text-center mt-10 text-2xl sm:text-left lg:text-3xl text-pink'>
+          <h1 className='text-center mt-10 text-2xl sm:text-left text-pink'>
             Mika Ervin
           </h1>
 
 
           {/*---------- SIDEBAR LIST ----------*/}
 
-          <ul className='flex flex-col text-center justify-evenly sm:justify-start sm:text-left text-xl h-1/2 w-full sm:mt-10'>
+          <ul className='flex flex-col text-center justify-evenly sm:justify-start sm:text-left text-xl h-full sm:h-1/2 w-full sm:mt-10'>
 
             <li className='sidebar-link'>
               <Link to='/animations'
