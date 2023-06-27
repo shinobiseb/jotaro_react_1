@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box;
+}
+
 /*------------ Sidebar ----------------*/
 
 .sidebar-link:hover {
@@ -32,13 +36,14 @@
 
 /*------------ Gallery ----------------*/
 
-.gallery{
+.gallery {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    border: solid 1px red;
 }
 
 .gallery-img {
@@ -61,16 +66,10 @@
     cursor: pointer;
 }
 
-/* .gallery-vid {
-    width: 320px;
-    height: auto;
-    margin: 10px;
-} */
-
 /* --------- Modal --------- */
 
 .overlay {
-    background-color: rgba(255, 255, 255, 0.829);
+    background-color: rgba(255, 255, 255, 0.692);
 }
 
 .modal {
