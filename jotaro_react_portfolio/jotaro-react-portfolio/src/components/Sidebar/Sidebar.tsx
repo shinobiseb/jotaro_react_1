@@ -9,11 +9,17 @@ type sidebarprops = {
 
 export default function Sidebar( {props} : sidebarprops ) {
 
-  const isBigScreen = useMediaQuery({ minWidth: 768 })
+  const isBigScreen = useMediaQuery({ minWidth: 640 })
 
   const sidebarAnimation = {
-    initial: { y: isBigScreen ? -500 : -700 },
-    animate: { y: 0 },
+    initial: { 
+      y: isBigScreen ? 0 : -700,  
+      x: isBigScreen ? -300 : 0}
+      ,
+    animate: { 
+      y: isBigScreen ? 0 : 0 ,
+      x: isBigScreen ? 0 : 0
+    },
     transition: { ease: 'easeOut' }
   }
 
@@ -23,7 +29,7 @@ export default function Sidebar( {props} : sidebarprops ) {
       animate={sidebarAnimation.animate}
       transition={sidebarAnimation.transition}
       className='flex flex-col-reverse items-center justify-center sm:flex-col h-3/4 w-full sm:w-1/3 sm:h-full bg-light-pink sidebar-bg z-10 border-b-[1px] sm:border-r-[1px] fixed'>
-        <div className='flex sm:flex-end sm:items-end justify-center sm:justify-end p-4 sm:pt-3 sm:pr-3'>
+        <div className='flex sm:flex-end sm:items-end justify-center w-full sm:justify-end p-4 sm:pt-3 sm:pr-3'>
           <i className="gg-close close-button" 
           onClick={()=> {
           props(!open)
@@ -33,7 +39,7 @@ export default function Sidebar( {props} : sidebarprops ) {
         
         {/*---------- SIDEBAR ----------*/}
         
-        <div className='flex flex-col h-full bg-light-pink font-sans  px-4 sm:px-10 sm:py-5'>
+        <div className='flex flex-col h-full bg-light-pink font-sans px-4 sm:px-10 sm:py-5'>
           
           <h1 className='text-center mt-10 text-2xl sm:text-left lg:text-3xl text-pink'>
             Mika Ervin
@@ -42,7 +48,7 @@ export default function Sidebar( {props} : sidebarprops ) {
 
           {/*---------- SIDEBAR LIST ----------*/}
 
-          <ul className='flex flex-col justify-evenly text-center text-2xl lg:text-lg h-full w-full'>
+          <ul className='flex flex-col justify-evenly text-center sm:text-left text-2xl lg:text-lg h-full w-full'>
 
             <li className='sidebar-link'>
               <Link to='/animations'
