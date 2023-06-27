@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/*------------ Sidebar ----------------*/
+
 .sidebar-link:hover {
     transition: 150ms;
     color: lightpink;
@@ -11,13 +13,6 @@
     color: #1B1725;
 }
 
-.close-button {
-    cursor: pointer;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-items: flex-end;
-}
-
 .contact-link {
     color: lightcoral;
     text-decoration: underline;
@@ -25,6 +20,13 @@
 
 .contact-link:hover {
     cursor: pointer;
+}
+
+.close-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: flex-end;
 }
 
 /*------------ Gallery ----------------*/
@@ -40,9 +42,9 @@
 
 .gallery-img {
     object-fit: cover;
-    width: 7em;
+    width: 50%;
     height: auto;
-    padding: 3px;
+
 }
 
 .gallery-img:hover {
@@ -62,5 +64,10 @@
 }
 
 .modal {
-    background-color: rgba(240, 128, 128, 0.171);
+    /* background-color: rgba(240, 128, 128, 0.171); */
+    width: 100%;
+}
+
+.modalContainer {
+    width: 90%;
 }
