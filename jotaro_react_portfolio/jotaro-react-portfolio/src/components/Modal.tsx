@@ -24,7 +24,7 @@ export default function Modal(props: modalProps) {
       <motion.div
       className='fixed'>
         <div className='flex items-center justify-center z-3 h-screen w-screen overlay' onClick={handleClose}>
-            <div className='modalContainer align-center justify-center'>
+            <div className='modalContainer flex align-center justify-center'>
               {typeof props.content === 'string' && props.content.includes('.mp4') ? (
                 <video src={props.content} controls autoPlay />
                 ) : (
