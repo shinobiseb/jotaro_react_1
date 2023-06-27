@@ -30,7 +30,7 @@ export default function Modal(props: modalProps) {
               {typeof props.content === 'string' && props.content.includes('.mp4') ? (
                 <video src={props.content} controls autoPlay />
                 ) : (
-                <img src={modifiedContent} alt='Modal Content' />
+                <img src={modifiedContent} className='modalImg' alt='Modal Content' />
               )}
             </div>
           </div>
