@@ -45,7 +45,12 @@
     padding: 2px;
     width: 50%;
     height: auto;
+}
 
+@media screen and (min-width: 640px) {
+    .gallery-img {
+        width: 10em;
+    }
 }
 
 .gallery-img:hover {

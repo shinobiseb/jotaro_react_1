@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { seniorThesisLinks } from '../assets/Imageurls';
+import { conceptArtLinks } from '../assets/Imageurls';
 import { imgSpawner } from '../assets/Imageurls';
 import Modal from './Modal';
 
@@ -13,7 +13,7 @@ export default function SeniorThesis() {
     const container = containerRef.current;
 
     if (container) {
-      imgSpawner(seniorThesisLinks, container);
+      imgSpawner(conceptArtLinks, container);
 
       const handleClick = (event: Event) => {
         const dataSrc = (event.target as HTMLImageElement).getAttribute('src');
