@@ -5,7 +5,6 @@
 function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
   
   for(let i = 0; i < arr.length; i++) {
-
       let imgC = document.createElement('img')
       imgC.setAttribute('src', `${arr[i]}`)
       imgC.setAttribute('id', `img${i}`)
