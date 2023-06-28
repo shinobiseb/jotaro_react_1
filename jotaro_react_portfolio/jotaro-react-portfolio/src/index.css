@@ -54,11 +54,12 @@
 }
 
 @media screen and (min-width: 640px) {
-    .gallery-img {
-        width: 10em;
-    }
     .gallery {
         margin: 0 2rem;
+    }
+    .gallery-img {
+        width: 25%;
+        border: solid red 1px;
     }
 }
 
