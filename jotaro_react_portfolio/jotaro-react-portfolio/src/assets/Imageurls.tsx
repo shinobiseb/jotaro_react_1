@@ -11,12 +11,13 @@ function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
       imgC.setAttribute('id', `video${i}`)
       imgC.setAttribute('class', `gallery-img`)
       container?.appendChild(imgC)
-    }
+    } else {
       let imgC = document.createElement('img')
       imgC.setAttribute('src', `${arr[i]}`)
       imgC.setAttribute('id', `img${i}`)
       imgC.setAttribute('class', `gallery-img`)
       container?.appendChild(imgC)
+      }
     }
     // console.log('I fired once')
 }
