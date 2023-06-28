@@ -14,7 +14,7 @@ export default function Sidebar( {props} : sidebarprops ) {
   const sidebarAnimation = {
     initial: { 
       y: isBigScreen ? 0 : -700,  
-      x: isBigScreen ? -300 : 0}
+      x: isBigScreen ? -250 : 0}
       ,
     animate: { 
       y: isBigScreen ? 0 : 0 ,
