@@ -10,6 +10,7 @@ function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
       imgC.setAttribute('src', `${arr[i]}`)
       imgC.setAttribute('id', `video${i}`)
       imgC.setAttribute('class', `gallery-vid`)
+      imgC.setAttribute('preload', `none`)
       container?.appendChild(imgC)
     } else {
       let imgC = document.createElement('img')
