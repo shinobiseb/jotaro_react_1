@@ -50,7 +50,6 @@
     padding: 2px;
     width: 50%;
     height: auto;
-    border: solid black 1px;
 }
 
 .gallery-img {
@@ -66,7 +65,6 @@
     }
     .gallery-img {
         width: 10rem;
-        border: solid black 1px;
         box-shadow: #1B1725 ;
     }
 
@@ -104,5 +102,5 @@
 
 .modalImg {
     max-height: 50rem;
-    box-shadow: black 2px 2px 5px;
+    box-shadow: rgba(0, 0, 0, 0.301) 1px 1px 5px;
 }
