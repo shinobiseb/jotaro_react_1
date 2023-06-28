@@ -45,12 +45,19 @@
     justify-content: center;
 }
 
+.gallery-vid {
+    object-fit: cover;
+    padding: 2px;
+    width: 50%;
+    height: auto;
+    border: solid black 1px;
+}
+
 .gallery-img {
     object-fit: cover;
     padding: 2px;
     width: 50%;
     height: auto;
-    
 }
 
 @media screen and (min-width: 640px) {
@@ -58,8 +65,15 @@
         margin: 0 2rem;
     }
     .gallery-img {
-        width: 25%;
-        border: solid red 1px;
+        width: 10rem;
+        border: solid black 1px;
+        box-shadow: #1B1725 ;
+    }
+
+    .gallery-vid {
+        width: 20rem;
+
+        box-shadow: #1B1725 1px 1px 2px ;
     }
 }
 
