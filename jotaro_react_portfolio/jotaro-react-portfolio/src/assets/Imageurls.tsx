@@ -1,17 +1,18 @@
 
-
 // ------------------- SPAWNER ------------------- //
 
-function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
-  
+function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement | null ) {
   for(let i = 0; i < arr.length; i++) {
-    if(arr[i].includes('.mp4')){
-      let imgC = document.createElement('video')
-      imgC.setAttribute('src', `${arr[i]}`)
-      imgC.setAttribute('id', `video${i}`)
-      imgC.setAttribute('class', `gallery-vid`)
-      imgC.setAttribute('preload', `none`)
-      container?.appendChild(imgC)
+    if(typeof arr[i] === 'object'){
+      const animation = arr[i] as { name: string, url: string, thumbnail: string }; // Type assertion to access object properties
+
+      const video = document.createElement('video');
+      video.setAttribute('src', animation.url);
+      video.setAttribute('id', `video${i}`);
+      video.setAttribute('class', 'gallery-video');
+      video.setAttribute('poster', animation.thumbnail)
+      
+      container?.appendChild(video);
     } else {
       let imgC = document.createElement('img')
       imgC.setAttribute('src', `${arr[i]}`)
@@ -20,21 +21,60 @@ function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
       container?.appendChild(imgC)
       }
     }
-    // console.log('I fired once')
 }
 
 // ------------------- LINKS ------------------- //
 
-  export const animationsLinks : Array<string>  = [
-    'https://i.imgur.com/m8rNurQ.mp4',
-    'https://i.imgur.com/RLYxas9.mp4',
-    'https://i.imgur.com/TnswO1c.mp4',
-    'https://i.imgur.com/62QTOuu.mp4',
-    'https://i.imgur.com/G53pgxS.mp4',
-    'https://i.imgur.com/PhOTqy5.mp4',
-    'https://i.imgur.com/DaFSSF6.mp4',
-    'https://i.imgur.com/UEnsU1D.mp4',
-    'https://i.imgur.com/A8kd5zs.mp4',
+  export const animationsLinks : {
+    name: string,
+    url: string,
+    thumbnail: string
+  }[]  = [
+    { 
+      name: 'flash warning',
+      url:'https://i.imgur.com/m8rNurQ.mp4', 
+      thumbnail: 'https://i.imgur.com/KcYwKDYm.png'
+    },
+    { 
+      name: 'experimental animation',
+      url:'https://i.imgur.com/RLYxas9.mp4', 
+      thumbnail: 'https://i.imgur.com/siDN1e0m.jpg'
+    },
+    { 
+      name: 'popsicle animation',
+      url:'https://i.imgur.com/TnswO1c.mp4', 
+      thumbnail: 'https://i.imgur.com/AdLSTq3m.jpg'
+    },
+    { 
+      name: 'Game Grumps Typography',
+      url:'https://i.imgur.com/62QTOuu.mp4', 
+      thumbnail: 'https://i.imgur.com/Z45iH7pm.jpg'
+    },
+    { 
+      name: 'scared white boy',
+      url: 'https://i.imgur.com/G53pgxS.mp4', 
+      thumbnail: 'https://i.imgur.com/KFa1kVQm.jpg'
+    },
+    { 
+      name: 'Mortem',
+      url: 'https://i.imgur.com/DaFSSF6.mp4', 
+      thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg'
+    },
+    { 
+      name: 'Mortem',
+      url: 'https://i.imgur.com/DaFSSF6.mp4', 
+      thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg'
+    },
+    { 
+      name: 'Mario Animation',
+      url: 'https://i.imgur.com/UEnsU1D.mp4', 
+      thumbnail: 'https://i.imgur.com/jbIOer6m.jpg'
+    },
+    { 
+      name: 'Dahlia Animatic',
+      url: 'https://i.imgur.com/A8kd5zs.mp4', 
+      thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg'
+    },
   ]
 
   export const seniorThesisLinks : Array<string> = [
