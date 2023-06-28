@@ -5,6 +5,13 @@
 function imgSpawner(arr : Array<string>, container : HTMLElement | null ) {
   
   for(let i = 0; i < arr.length; i++) {
+    if(arr[i].includes('.mp4')){
+      let imgC = document.createElement('video')
+      imgC.setAttribute('src', `${arr[i]}`)
+      imgC.setAttribute('id', `video${i}`)
+      imgC.setAttribute('class', `gallery-img`)
+      container?.appendChild(imgC)
+    }
       let imgC = document.createElement('img')
       imgC.setAttribute('src', `${arr[i]}`)
       imgC.setAttribute('id', `img${i}`)
