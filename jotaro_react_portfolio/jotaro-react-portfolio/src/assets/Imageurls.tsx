@@ -61,11 +61,6 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
       thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg'
     },
     { 
-      name: 'Mortem',
-      url: 'https://i.imgur.com/DaFSSF6.mp4', 
-      thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg'
-    },
-    { 
       name: 'Mario Animation',
       url: 'https://i.imgur.com/UEnsU1D.mp4', 
       thumbnail: 'https://i.imgur.com/jbIOer6m.jpg'
@@ -73,7 +68,7 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     { 
       name: 'Dahlia Animatic',
       url: 'https://i.imgur.com/A8kd5zs.mp4', 
-      thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg'
+      thumbnail: 'https://i.imgur.com/Qqr3lgo.jpg'
     },
   ]
 

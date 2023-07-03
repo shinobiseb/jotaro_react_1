@@ -24,7 +24,7 @@ export default function Modal(props: modalProps) {
       className='fixed'>
         <div className='flex items-center justify-center z-3 h-screen w-screen overlay' onClick={handleClose}>
             <div className='modalContainer flex align-center justify-center'>
-              {typeof props.content === 'object' ? (
+              {typeof props === 'object' ? (
                 <video src={props.content} controls className='modalImg'/>
                 ) : (
                 <img src={modifiedContent} className='modalImg' alt='Modal Content' />
