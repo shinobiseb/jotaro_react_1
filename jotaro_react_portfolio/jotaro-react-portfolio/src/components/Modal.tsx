@@ -24,12 +24,11 @@ export default function Modal(props: modalProps) {
       className='fixed'>
         <div className='flex items-center justify-center z-3 h-screen w-screen overlay' onClick={handleClose}>
             <div className='modalContainer flex align-center z-4 justify-center'>
-              {typeof props === 'object' ? (
+              {props.content.includes('mp4') ? (
                 <video src={props.content} controls className='modalImg'/>
                 ) : (
                 <img src={modifiedContent} className='modalImg' alt='Modal Content' />
               )}
-
           </div>
         </div>
       </motion.div>
