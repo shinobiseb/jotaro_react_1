@@ -45,7 +45,7 @@
     justify-content: center;
 }
 
-.gallery-vid {
+.gallery-video {
     object-fit: cover;
     padding: 2px;
     width: 50%;
@@ -68,10 +68,8 @@
         box-shadow: #1B1725 ;
     }
 
-    .gallery-vid {
+    .gallery-video {
         width: 20rem;
-
-        box-shadow: #1B1725 1px 1px 2px ;
     }
 }
 

@@ -15,17 +15,16 @@ export default function Modal(props: modalProps) {
     props.setState(false);
   };
 
-  const variants = {
-    visible: {  }
-  }
+  console.log(props)
 
   return props.state ? (
+
     <AnimatePresence>
       <motion.div
       className='fixed'>
         <div className='flex items-center justify-center z-3 h-screen w-screen overlay' onClick={handleClose}>
             <div className='modalContainer flex align-center justify-center'>
-              {typeof props.content === 'string' && props.content.includes('.mp4') ? (
+              {typeof props.content === 'object' ? (
                 <video src={props.content} controls className='modalImg'/>
                 ) : (
                 <img src={modifiedContent} className='modalImg' alt='Modal Content' />
