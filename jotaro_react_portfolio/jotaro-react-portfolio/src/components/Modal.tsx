@@ -21,15 +21,13 @@ export default function Modal(props: modalProps) {
 
     <AnimatePresence>
       <motion.div
-      className='fixed'>
-        <div className='flex items-center justify-center z-3 h-screen w-screen overlay' onClick={handleClose}>
-            <div className='modalContainer flex align-center z-4 justify-center'>
+      className='fixed z-10'>
+        <div className='flex items-center justify-centerh-screen w-screen h-screen overlay flex align-center justify-center' onClick={handleClose}>
               {props.content.includes('mp4') ? (
                 <video src={props.content} controls className='modalImg'/>
                 ) : (
-                <img src={modifiedContent} className='modalImg' alt='Modal Content' />
+                <img src={modifiedContent} className='modalImg z-3' alt='Modal Content' />
               )}
-          </div>
         </div>
       </motion.div>
     </AnimatePresence>
