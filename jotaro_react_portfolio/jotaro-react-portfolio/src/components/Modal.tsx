@@ -26,7 +26,7 @@ export default function Modal(props: modalProps) {
               {props.content.includes('mp4') ? (
                 <video src={props.content} controls className='modalImg'/>
                 ) : (
-                <img src={modifiedContent} className='modalImg z-3' alt='Modal Content' />
+                <img src={modifiedContent} className='modalImg' alt='Modal Content' />
               )}
         </div>
       </motion.div>

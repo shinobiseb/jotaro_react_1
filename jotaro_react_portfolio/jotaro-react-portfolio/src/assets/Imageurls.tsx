@@ -73,17 +73,13 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
   ]
 
   export const seniorThesisLinks : Array<string> = [
+    'https://i.imgur.com/b9cJn4Ll.png',
     'https://i.imgur.com/GnPQlI1l.png',
-    'https://i.imgur.com/tEE80yRl.png',
-    'https://i.imgur.com/jn05Qgwl.jpg',
+    'https://i.imgur.com/poeDfRVl.png',
     'https://i.imgur.com/CXvJxqPl.png',
     'https://i.imgur.com/ILezUzhl.jpg',
     'https://i.imgur.com/FQtofu5l.png',
-    'https://i.imgur.com/ujzBKRsl.png',
-    'https://i.imgur.com/1IcPw6xl.png',
-    'https://i.imgur.com/Bcj2eSbl.png',
     'https://i.imgur.com/gLIMh1gl.png',
-    'https://i.imgur.com/b9cJn4Ll.png',
     'https://i.imgur.com/RG3kgkil.jpg',
     'https://i.imgur.com/nF5vS96l.png',
     'https://i.imgur.com/EupytGql.jpg',
@@ -94,8 +90,12 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     'https://i.imgur.com/Pl3EVpbl.png',
     'https://i.imgur.com/o1jZkPdl.png',
     'https://i.imgur.com/9szkCmcl.png',
+    'https://i.imgur.com/jn05Qgwl.jpg',
     'https://i.imgur.com/r9qQsEul.png',
-    'https://i.imgur.com/poeDfRVl.png',
+    'https://i.imgur.com/tEE80yRl.png',
+    'https://i.imgur.com/1IcPw6xl.png',
+    'https://i.imgur.com/Bcj2eSbl.png',
+    'https://i.imgur.com/ujzBKRsl.png',
   ]
 
   export const conceptArtLinks : Array<string> = [
