@@ -85,17 +85,17 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     'https://i.imgur.com/EupytGql.jpg',
     'https://i.imgur.com/867ocBYl.png',
     'https://i.imgur.com/OY2kRjnl.jpg',
+    'https://i.imgur.com/Bcj2eSbl.png',
     'https://i.imgur.com/9AlRn1Yl.png',
-    'https://i.imgur.com/DR4CWtRl.jpg',
-    'https://i.imgur.com/Pl3EVpbl.png',
     'https://i.imgur.com/o1jZkPdl.png',
     'https://i.imgur.com/9szkCmcl.png',
     'https://i.imgur.com/jn05Qgwl.jpg',
     'https://i.imgur.com/r9qQsEul.png',
     'https://i.imgur.com/tEE80yRl.png',
     'https://i.imgur.com/1IcPw6xl.png',
-    'https://i.imgur.com/Bcj2eSbl.png',
     'https://i.imgur.com/ujzBKRsl.png',
+    'https://i.imgur.com/DR4CWtRl.jpg',
+    'https://i.imgur.com/Pl3EVpbl.png',
   ]
 
   export const conceptArtLinks : Array<string> = [
