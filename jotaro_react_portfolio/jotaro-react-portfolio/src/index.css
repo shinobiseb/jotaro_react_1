@@ -97,6 +97,10 @@
     .gallery img {
         width: 10rem;
     }
+
+    .gallery-video {
+        width: 90%;
+    }
 }
 
 
