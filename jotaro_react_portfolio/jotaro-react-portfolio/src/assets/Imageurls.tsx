@@ -36,7 +36,25 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
       name: 'flash warning',
       url:'https://i.imgur.com/m8rNurQ.mp4', 
       thumbnail: 'https://i.imgur.com/KcYwKDYm.png',
-      youtube: 'fdasfdasfd',
+      youtube: 'https://youtu.be/k8bRClS3poM',
+    },
+    { 
+      name: 'tree animation',
+      url:'https://live.staticflickr.com/video/53037347889/703d8a06cc/1080p.mp4?s=eyJpIjo1MzAzNzM0Nzg4OSwiZSI6MTY4OTAzMDQyNywicyI6IjU5ZWU4YmQyOTFkNjZmODU2MzFkOGQyNTkxM2QyMTVjZWQ0YjhjZjgiLCJ2IjoxfQ', 
+      thumbnail: 'https://i.imgur.com/z5Chwpd.jpg',
+      youtube: '',
+    },
+    { 
+      name: 'Bound Animation',
+      url:'https://live.staticflickr.com/video/53037555580/24b8a9256a/1080p.mp4?s=eyJpIjo1MzAzNzU1NTU4MCwiZSI6MTY4OTAzMDYzMiwicyI6IjViM2NiYmUxNDkwMzkxMjkwZDEwMWQzMjc0MTZhNDIxM2I1YzY2ZDMiLCJ2IjoxfQ', 
+      thumbnail: 'https://i.imgur.com/VSnW6o1.png',
+      youtube: '',
+    },
+    { 
+      name: 'Cafe au Fate',
+      url:'https://live.staticflickr.com/video/53037557015/20372624c0/1080p.mp4?s=eyJpIjo1MzAzNzU1NzAxNSwiZSI6MTY4OTAzMDk5NCwicyI6ImExMmZiYmJkNWJjOTdlNDI3ODZhNTNjNmE4ZDFjYzA2MDY0MTFkNjIiLCJ2IjoxfQ', 
+      thumbnail: 'https://i.imgur.com/irFNcsG.jpg',
+      youtube: '',
     },
     { 
       name: 'experimental animation',
@@ -54,7 +72,7 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
       name: 'Game Grumps Typography',
       url:'https://i.imgur.com/62QTOuu.mp4', 
       thumbnail: 'https://i.imgur.com/Z45iH7pm.jpg',
-      youtube: '',
+      youtube: 'https://youtu.be/mBb8piNWoRQ',
     },
     { 
       name: 'scared white boy',
@@ -66,7 +84,7 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
       name: 'Mortem',
       url: 'https://i.imgur.com/DaFSSF6.mp4', 
       thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg',
-      youtube: ''
+      youtube: 'https://youtu.be/Pf0VR0OXTSo',
     },
     { 
       name: 'Mario Animation',
