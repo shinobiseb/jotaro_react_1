@@ -136,4 +136,5 @@
     background-color: lightcoral;
     color: white;
     transform: scale(1.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
 }
