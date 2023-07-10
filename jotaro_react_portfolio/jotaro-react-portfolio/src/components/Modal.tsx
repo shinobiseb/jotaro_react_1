@@ -17,9 +17,9 @@ export default function Modal(props: modalProps) {
 
   return props.state ? (
 
-    <AnimatePresence>
+    <AnimatePresence initial={false}>
       <motion.div
-      className='fixed z-10'>
+        className='fixed z-10'>
         <div className='flex items-center justify-centerh-screen w-screen h-screen overlay flex align-center justify-center' onClick={handleClose}>
               {props.content.includes('mp4') ? (
                 <video src={props.content} controls className='modalImg'/>
