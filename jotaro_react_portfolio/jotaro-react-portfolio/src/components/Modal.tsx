@@ -15,8 +15,6 @@ export default function Modal(props: modalProps) {
     props.setState(false);
   };
 
-  console.log(props)
-
   return props.state ? (
 
     <AnimatePresence>
