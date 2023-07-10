@@ -87,10 +87,6 @@
     .gallery-video {
         width: 20rem;
     }
-
-    .modalImg {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 640px) {
@@ -103,9 +99,6 @@
         width: 10rem;
     }
 
-    .modalImg {
-        width: 80%;
-    }
 }
 
 
@@ -125,6 +118,7 @@
     max-height: 50rem;
     box-shadow: rgba(0, 0, 0, 0.301) 1px 1px 5px;
     z-index: 3;
+    width: 80%;
 }
 
 .modalLink {
