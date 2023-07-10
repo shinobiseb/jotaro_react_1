@@ -26,7 +26,7 @@ export default function Modal(props: modalProps) {
               {props.content.includes('mp4') ? (
                 <>
                   <video src={props.content} controls className='modalImg'/>
-                  <a className='modalLink' target='_blank' href={props.youtube}> Youtube Link </a>
+                  <a className='modalLink' href={props.youtube} target='_blank' > Youtube Link </a>
                 </>
                 ) : (
                 <img src={modifiedContent} className='modalImg' alt='Modal Content' />
