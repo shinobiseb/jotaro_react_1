@@ -5,7 +5,8 @@ type modalProps = {
   state: boolean;
   setState: React.Dispatch<React.SetStateAction<any>>;
   content: any;
-};
+  youtube?: string;
+}
 
 export default function Modal(props: modalProps) {
 
@@ -15,14 +16,18 @@ export default function Modal(props: modalProps) {
     props.setState(false);
   };
 
-  return props.state ? (
+  console.log(props)
 
+  return props.state ? (
     <AnimatePresence initial={false}>
       <motion.div
         className='fixed z-10'>
-        <div className='flex items-center justify-centerh-screen w-screen h-screen overlay flex align-center justify-center' onClick={handleClose}>
+        <div className='flex flex-col items-center justify-centerh-screen w-screen h-screen overlay flex align-center justify-center' onClick={handleClose}>
               {props.content.includes('mp4') ? (
-                <video src={props.content} controls className='modalImg'/>
+                <>
+                  <video src={props.content} controls className='modalImg'/>
+                  <a className='modalLink' href={props.youtube}> Youtube Link </a>
+                </>
                 ) : (
                 <img src={modifiedContent} className='modalImg' alt='Modal Content' />
               )}

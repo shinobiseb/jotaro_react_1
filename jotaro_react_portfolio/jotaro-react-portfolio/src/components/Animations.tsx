@@ -6,6 +6,7 @@ import Modal from './Modal';
 export default function Animations() {
   const [modalState, setModalState] = useState(false);
   const [selectedContent, setSelectedContent] = useState('');
+  const [selectedYoutube, setSelectedYoutube] = useState('');
 
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -17,7 +18,9 @@ export default function Animations() {
 
       const handleClick = (event: Event) => {
         const dataSrc = (event.target as HTMLImageElement).getAttribute('src');
+        const dataYoutube = (event.target as HTMLImageElement).getAttribute('youtube');
         setSelectedContent(dataSrc || '');
+        setSelectedYoutube(dataYoutube || '')
         setModalState(true);
       };
 
@@ -35,7 +38,7 @@ export default function Animations() {
 
   return (
     <>
-      <Modal content={selectedContent} state={modalState} setState={setModalState} />
+      <Modal youtube={selectedYoutube} content={selectedContent} state={modalState} setState={setModalState} />
       <div className='gallery' id='animationsCont' ref={containerRef}>
       </div>
     </>

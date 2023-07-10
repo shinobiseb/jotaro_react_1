@@ -4,13 +4,14 @@
 function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement | null ) {
   for(let i = 0; i < arr.length; i++) {
     if(typeof arr[i] === 'object'){
-      const animation = arr[i] as { name: string, url: string, thumbnail: string }; // Type assertion to access object properties
-
+      const animation = arr[i] as { name: string, url: string, thumbnail: string, youtube: string };
       const video = document.createElement('video');
       video.setAttribute('src', animation.url);
       video.setAttribute('id', `video${i}`);
       video.setAttribute('class', 'gallery-video');
       video.setAttribute('poster', animation.thumbnail)
+      video.setAttribute('youtube', animation.youtube)
+
       
       container?.appendChild(video);
     } else {
@@ -29,46 +30,55 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     name: string,
     url: string,
     thumbnail: string
+    youtube: string
   }[]  = [
     { 
       name: 'flash warning',
       url:'https://i.imgur.com/m8rNurQ.mp4', 
-      thumbnail: 'https://i.imgur.com/KcYwKDYm.png'
+      thumbnail: 'https://i.imgur.com/KcYwKDYm.png',
+      youtube: 'fdasfdasfd',
     },
     { 
       name: 'experimental animation',
       url:'https://i.imgur.com/RLYxas9.mp4', 
-      thumbnail: 'https://i.imgur.com/siDN1e0m.jpg'
+      thumbnail: 'https://i.imgur.com/siDN1e0m.jpg',
+      youtube: '',
     },
     { 
       name: 'popsicle animation',
       url:'https://i.imgur.com/TnswO1c.mp4', 
-      thumbnail: 'https://i.imgur.com/AdLSTq3m.jpg'
+      thumbnail: 'https://i.imgur.com/AdLSTq3m.jpg',
+      youtube: '',
     },
     { 
       name: 'Game Grumps Typography',
       url:'https://i.imgur.com/62QTOuu.mp4', 
-      thumbnail: 'https://i.imgur.com/Z45iH7pm.jpg'
+      thumbnail: 'https://i.imgur.com/Z45iH7pm.jpg',
+      youtube: '',
     },
     { 
       name: 'scared white boy',
       url: 'https://i.imgur.com/G53pgxS.mp4', 
-      thumbnail: 'https://i.imgur.com/KFa1kVQm.jpg'
+      thumbnail: 'https://i.imgur.com/KFa1kVQm.jpg',
+      youtube: ''
     },
     { 
       name: 'Mortem',
       url: 'https://i.imgur.com/DaFSSF6.mp4', 
-      thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg'
+      thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg',
+      youtube: ''
     },
     { 
       name: 'Mario Animation',
       url: 'https://i.imgur.com/UEnsU1D.mp4', 
-      thumbnail: 'https://i.imgur.com/jbIOer6m.jpg'
+      thumbnail: 'https://i.imgur.com/jbIOer6m.jpg',
+      youtube: ''
     },
     { 
       name: 'Dahlia Animatic',
       url: 'https://i.imgur.com/A8kd5zs.mp4', 
-      thumbnail: 'https://i.imgur.com/Qqr3lgo.jpg'
+      thumbnail: 'https://i.imgur.com/Qqr3lgo.jpg',
+      youtube: 'https://youtu.be/Nc0_p7nLMXo'
     },
   ]
 
@@ -89,13 +99,13 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     'https://i.imgur.com/9AlRn1Yl.png',
     'https://i.imgur.com/o1jZkPdl.png',
     'https://i.imgur.com/9szkCmcl.png',
+    'https://i.imgur.com/DR4CWtRl.jpg',
+    'https://i.imgur.com/Pl3EVpbl.png',
     'https://i.imgur.com/jn05Qgwl.jpg',
     'https://i.imgur.com/r9qQsEul.png',
     'https://i.imgur.com/tEE80yRl.png',
     'https://i.imgur.com/1IcPw6xl.png',
     'https://i.imgur.com/ujzBKRsl.png',
-    'https://i.imgur.com/DR4CWtRl.jpg',
-    'https://i.imgur.com/Pl3EVpbl.png',
   ]
 
   export const conceptArtLinks : Array<string> = [
