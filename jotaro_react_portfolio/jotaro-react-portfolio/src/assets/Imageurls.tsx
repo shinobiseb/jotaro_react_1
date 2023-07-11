@@ -34,13 +34,25 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
   }[]  = [
     { 
       name: 'flash warning',
-      url:'https://i.imgur.com/m8rNurQ.mp4', 
+      url:'https://live.staticflickr.com/video/53037601115/a33ff7dd3a/1080p.mp4?s=eyJpIjo1MzAzNzYwMTExNSwiZSI6MTY4OTAzNTE1MiwicyI6IjMxNzYyNTE5M2FmYmNhMWI2ZTc0ZWI1MzkyMjZjM2MxOThiNzc4ZTYiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/KcYwKDYm.png',
       youtube: 'https://youtu.be/k8bRClS3poM',
     },
     { 
       name: 'tree animation',
       url:'https://live.staticflickr.com/video/53037347889/703d8a06cc/1080p.mp4?s=eyJpIjo1MzAzNzM0Nzg4OSwiZSI6MTY4OTAzMDQyNywicyI6IjU5ZWU4YmQyOTFkNjZmODU2MzFkOGQyNTkxM2QyMTVjZWQ0YjhjZjgiLCJ2IjoxfQ', 
+      thumbnail: 'https://i.imgur.com/z5Chwpd.jpg',
+      youtube: '',
+    },
+    { 
+      name: 'Moana',
+      url:'https://live.staticflickr.com/video/53037693623/1e7458d219/1080p.mp4?s=eyJpIjo1MzAzNzY5MzYyMywiZSI6MTY4OTAzNDE3OCwicyI6IjYyZDZjZjIyZGQ1ZTE4MjA3OTg3MTlkZmNjNDg3NmM1OGRhZjNjOGUiLCJ2IjoxfQ', 
+      thumbnail: 'https://i.imgur.com/4eN0FZ7.jpg',
+      youtube: '',
+    },
+    { 
+      name: 'morphing animation',
+      url:'https://live.staticflickr.com/video/53037693563/31e8ff810c/360p.mp4?s=eyJpIjo1MzAzNzY5MzU2MywiZSI6MTY4OTAzMjU3MCwicyI6IjFhMDcwNTNmMzVjZDAxOGQyZGVkNWU3N2RhN2FiMmQyNTc4MTg3MTUiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/z5Chwpd.jpg',
       youtube: '',
     },
@@ -58,43 +70,43 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     },
     { 
       name: 'experimental animation',
-      url:'https://i.imgur.com/RLYxas9.mp4', 
+      url:'https://live.staticflickr.com/video/53037164546/388a017b5d/1080p.mp4?s=eyJpIjo1MzAzNzE2NDU0NiwiZSI6MTY4OTAzNTA3NiwicyI6ImJmOWVjYjQyNTUzOGYwNTZhNzhlYTVmN2MxN2QyOGE5Mzk1ZjZhZjEiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/siDN1e0m.jpg',
       youtube: '',
     },
     { 
       name: 'popsicle animation',
-      url:'https://i.imgur.com/TnswO1c.mp4', 
+      url:'https://live.staticflickr.com/video/53037555510/3d1d4a5619/1080p.mp4?s=eyJpIjo1MzAzNzU1NTUxMCwiZSI6MTY4OTAzNTA4OCwicyI6IjJiNTNjOWQ5YTQxNDc1NDE1N2NkODMwYWUyM2NkYTQ3OTFiODk1Y2QiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/AdLSTq3m.jpg',
       youtube: '',
     },
     { 
       name: 'Game Grumps Typography',
-      url:'https://i.imgur.com/62QTOuu.mp4', 
+      url:'https://live.staticflickr.com/video/53037209191/58fdbc3198/1080p.mp4?s=eyJpIjo1MzAzNzIwOTE5MSwiZSI6MTY4OTAzNTAzMSwicyI6IjU5MTUzZTZmNzE4MWY4NGYwNzJjYzc2YjVlMjdlNGM2Yjc1NWNlYTIiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/Z45iH7pm.jpg',
       youtube: 'https://youtu.be/mBb8piNWoRQ',
     },
     { 
       name: 'scared white boy',
-      url: 'https://i.imgur.com/G53pgxS.mp4', 
+      url: 'https://live.staticflickr.com/video/53036631262/b9a889f6a5/1080p.mp4?s=eyJpIjo1MzAzNjYzMTI2MiwiZSI6MTY4OTAzNTE1OSwicyI6ImYxNGRiMTNkNDhmMmIxMGE2MmI1ZjY2MjI5MWUxMjNlODU3MmNiYjkiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/KFa1kVQm.jpg',
       youtube: ''
     },
     { 
       name: 'Mortem',
-      url: 'https://i.imgur.com/DaFSSF6.mp4', 
+      url: 'https://live.staticflickr.com/video/53036631252/c45372c23a/1080p.mp4?s=eyJpIjo1MzAzNjYzMTI1MiwiZSI6MTY4OTAzNTEyOSwicyI6IjQ3ZTMyOTUxN2M1MjNjMTA1OTFiYTZiMDdlY2RjNzY4N2YxM2QxYzYiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg',
       youtube: 'https://youtu.be/Pf0VR0OXTSo',
     },
     { 
       name: 'Mario Animation',
-      url: 'https://i.imgur.com/UEnsU1D.mp4', 
+      url: 'https://live.staticflickr.com/video/53037392334/8033a67575/1080p.mp4?s=eyJpIjo1MzAzNzM5MjMzNCwiZSI6MTY4OTAzNTA1OSwicyI6ImNjM2FjNDRmYzAxNTMyZWVkZDEwZjM2ZjgwOTJmMWM1NDcxZDE0ZmIiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/jbIOer6m.jpg',
       youtube: ''
     },
     { 
       name: 'Dahlia Animatic',
-      url: 'https://i.imgur.com/A8kd5zs.mp4', 
+      url: 'https://live.staticflickr.com/video/53037601175/85854f5e73/1080p.mp4?s=eyJpIjo1MzAzNzYwMTE3NSwiZSI6MTY4OTAzNTE3OCwicyI6IjY2Y2I1MjE0OTBkZGY2OTc5ODUxMjc0MWJmNzlhOWM4NmM0MDY3NjMiLCJ2IjoxfQ', 
       thumbnail: 'https://i.imgur.com/Qqr3lgo.jpg',
       youtube: 'https://youtu.be/Nc0_p7nLMXo'
     },
