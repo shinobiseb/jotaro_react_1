@@ -11,6 +11,7 @@ import SeniorThesis from './components/SeniorThesis'
 import Storyboards from './components/Storyboards'
 import Conceptart from './components/Conceptart'
 import Modeling from './components/Modeling'
+import Commission from './components/Commission'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/animations" element={<Animations/>}/>
         <Route path="/storyboards" element={<Storyboards/>}/>
         <Route path="/conceptart" element={<Conceptart/>}/>
+        <Route path="/commission" element={<Commission/>}/>
       </Routes>
 
       

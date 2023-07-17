@@ -93,6 +93,13 @@ export default function Sidebar( {props} : sidebarprops ) {
             </li>
 
             <li className='sidebar-link'>
+              <Link to='/commission'
+               onClick={()=> {
+                props(!open)
+              }}>Commission</Link>
+            </li>
+
+            <li className='sidebar-link'>
               <Link to='/contact'
                onClick={()=> {
                 props(!open)
