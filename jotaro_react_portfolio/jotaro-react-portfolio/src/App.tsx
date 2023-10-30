@@ -30,7 +30,7 @@ function App() {
       }
 
       <Routes>
-      <Route path="/" element={<Animations/>}/>
+      <Route path="/" element={<Modeling/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/modeling" element={<Modeling/>}/>
         <Route path="/contact" element={<Contact/>}/>
