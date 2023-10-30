@@ -64,7 +64,7 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     },
     { 
       name: 'Cafe au Fate',
-      url:'https://live.staticflickr.com/video/53037557015/20372624c0/1080p.mp4?s=eyJpIjo1MzAzNzU1NzAxNSwiZSI6MTY4OTYxMzgwOCwicyI6IjYzYmJiNjRiODM0YjU5MzMxYWVkNGE2OWRkZWZhNzgxYTkyOTgzYTMiLCJ2IjoxfQ', 
+      url:'https://www.youtube.com/embed/3OYGcy0-UH0?si=u4pMy4cfMzmX1it5', 
       thumbnail: 'https://i.imgur.com/irFNcsG.jpg',
       youtube: '',
     },
