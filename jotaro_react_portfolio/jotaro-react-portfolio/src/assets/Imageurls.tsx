@@ -33,85 +33,86 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     thumbnail: string
     youtube: string
   }[]  = [
-    { 
-      name: 'flash warning',
-      url:'https://youtu.be/k8bRClS3poM', 
-      thumbnail: 'https://i.imgur.com/KcYwKDYm.png',
-      youtube: 'https://youtu.be/k8bRClS3poM',
+    {
+      "name": "flash warning",
+      "url": "https://www.youtube.com/embed/k8bRClS3poM?si=jkFIOg9tknepjj0L",
+      "thumbnail": "https://i.imgur.com/KcYwKDYm.png",
+      "youtube": "https://www.youtube.com/embed/k8bRClS3poM?si=jkFIOg9tknepjj0L"
     },
-    { 
-      name: 'tree animation',
-      url:'https://youtu.be/bnegMvRivXw', 
-      thumbnail: 'https://i.imgur.com/z5Chwpd.jpg',
-      youtube: 'https://youtu.be/bnegMvRivXw',
+    {
+      "name": "tree animation",
+      "url": "https://www.youtube.com/embed/bnegMvRivXw?si=swRDjERyJRbYKTCn",
+      "thumbnail": "https://i.imgur.com/z5Chwpd.jpg",
+      "youtube": "https://www.youtube.com/embed/bnegMvRivXw?si=swRDjERyJRbYKTCn"
     },
-    { 
-      name: 'Moana',
-      url:'https://youtu.be/bnegMvRivXw', 
-      thumbnail: 'https://i.imgur.com/4eN0FZ7.jpg',
-      youtube: 'https://youtu.be/bnegMvRivXw',
+    {
+      "name": "Moana",
+      "url": "https://www.youtube.com/embed/bnegMvRivXw?si=Vj38BXokURDl1N5u",
+      "thumbnail": "https://i.imgur.com/4eN0FZ7.jpg",
+      "youtube": "https://www.youtube.com/embed/bnegMvRivXw?si=Vj38BXokURDl1N5u"
     },
-    { 
-      name: 'morphing animation',
-      url:'https://youtu.be/V6GJfcXjPNQ', 
-      thumbnail: 'https://i.imgur.com/EZxtAfa.jpg',
-      youtube: 'https://youtu.be/V6GJfcXjPNQ',
+    {
+      "name": "morphing animation",
+      "url": "https://www.youtube.com/embed/V6GJfcXjPNQ?si=1FBYbIlfj9BEVZtU",
+      "thumbnail": "https://i.imgur.com/EZxtAfa.jpg",
+      "youtube": "https://www.youtube.com/embed/V6GJfcXjPNQ?si=1FBYbIlfj9BEVZtU"
     },
-    { 
-      name: 'Bound Animation',
-      url:'https://youtu.be/4pQJx6tCYPQ?si=rRyrUmYuvQ4lDDVd', 
-      thumbnail: 'https://i.imgur.com/VSnW6o1.png',
-      youtube: 'https://youtu.be/4pQJx6tCYPQ?si=rRyrUmYuvQ4lDDVd',
+    {
+      "name": "Bound Animation",
+      "url": "https://youtu.be/4pQJx6tCYPQ?si=HzRr4SeT6ylzLFRj",
+      "thumbnail": "https://i.imgur.com/VSnW6o1.png",
+      "youtube": "https://youtu.be/4pQJx6tCYPQ?si=HzRr4SeT6ylzLFRj"
     },
-    { 
-      name: 'Cafe au Fate',
-      url:'https://www.youtube.com/embed/3OYGcy0-UH0?si=u4pMy4cfMzmX1it5', 
-      thumbnail: 'https://i.imgur.com/irFNcsG.jpg',
-      youtube: '',
+    {
+      "name": "Cafe au Fate",
+      "url": "https://www.youtube.com/embed/3OYGcy0-UH0?si=CPCNgjzQZDYd6JCD",
+      "thumbnail": "https://i.imgur.com/irFNcsG.jpg",
+      "youtube": "https://www.youtube.com/embed/3OYGcy0-UH0?si=CPCNgjzQZDYd6JCD"
     },
-    { 
-      name: 'experimental animation',
-      url:'', 
-      thumbnail: 'https://i.imgur.com/siDN1e0m.jpg',
-      youtube: '',
+    {
+      "name": "experimental animation",
+      "url": "https://www.youtube.com/embed/4pQJx6tCYPQ?si=ACvUwdKVNLRjz29k",
+      "thumbnail": "https://i.imgur.com/siDN1e0m.jpg",
+      "youtube": "https://www.youtube.com/embed/4pQJx6tCYPQ?si=ACvUwdKVNLRjz29k"
     },
-    { 
-      name: 'popsicle animation',
-      url:'https://youtu.be/c0DnrK9dre4', 
-      thumbnail: 'https://i.imgur.com/AdLSTq3m.jpg',
-      youtube: 'https://youtu.be/c0DnrK9dre4',
+    {
+      "name": "popsicle animation",
+      "url": "https://www.youtube.com/embed/c0DnrK9dre4?si=chRM6r_sllEwCME4",
+      "thumbnail": "https://i.imgur.com/AdLSTq3m.jpg",
+      "youtube": "https://www.youtube.com/embed/c0DnrK9dre4?si=chRM6r_sllEwCME4"
     },
-    { 
-      name: 'Game Grumps Typography',
-      url:'https://youtu.be/mBb8piNWoRQ', 
-      thumbnail: 'https://i.imgur.com/Z45iH7pm.jpg',
-      youtube: 'https://youtu.be/mBb8piNWoRQ',
+    {
+      "name": "Game Grumps Typography",
+      "url": "https://www.youtube.com/embed/mBb8piNWoRQ?si=39-JDCl9NCs-sJuX",
+      "thumbnail": "https://i.imgur.com/Z45iH7pm.jpg",
+      "youtube": "https://www.youtube.com/embed/mBb8piNWoRQ?si=39-JDCl9NCs-sJuX"
     },
-    { 
-      name: 'scared white boy',
-      url: 'https://youtu.be/KpQcFjy8n6w', 
-      thumbnail: 'https://i.imgur.com/KFa1kVQm.jpg',
-      youtube: 'https://youtu.be/KpQcFjy8n6w'
+    {
+      "name": "scared white boy",
+      "url": "https://www.youtube.com/embed/KpQcFjy8n6w?si=gs5q8OYeze9hno2F",
+      "thumbnail": "https://i.imgur.com/KFa1kVQm.jpg",
+      "youtube": "https://www.youtube.com/embed/KpQcFjy8n6w?si=gs5q8OYeze9hno2F"
     },
-    { 
-      name: 'Mortem',
-      url: 'https://youtu.be/Pf0VR0OXTSo', 
-      thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg',
-      youtube: 'https://youtu.be/Pf0VR0OXTSo',
+    {
+      "name": "Mortem",
+      "url": "https://youtu.be/Pf0VR0OXTSo",
+      "thumbnail": "https://i.imgur.com/uaOiyuWm.jpg",
+      "youtube": "https://youtu.be/Pf0VR0OXTSo"
     },
-    { 
-      name: 'Mario Animation',
-      url: 'https://youtu.be/VXHV0NDraNE', 
-      thumbnail: 'https://i.imgur.com/jbIOer6m.jpg',
-      youtube: 'https://youtu.be/VXHV0NDraNE'
+    {
+      "name": "Mario Animation",
+      "url": "https://www.youtube.com/embed/VXHV0NDraNE?si=3J3240fOah1qjA4a",
+      "thumbnail": "https://i.imgur.com/jbIOer6m.jpg",
+      "youtube": "https://youtu.be/VXHV0NDraNE"
     },
-    { 
-      name: 'Dahlia Animatic',
-      url: 'https://youtu.be/Nc0_p7nLMXo', 
-      thumbnail: 'https://i.imgur.com/Qqr3lgo.jpg',
-      youtube: 'https://youtu.be/Nc0_p7nLMXo'
-    },
+    {
+      "name": "Dahlia Animatic",
+      "url": "https://youtu.be/Nc0_p7nLMXo?si=JEeAg8uOM3SYDDs3",
+      "thumbnail": "https://i.imgur.com/Qqr3lgo.jpg",
+      "youtube": "https://youtu.be/Nc0_p7nLMXo?si=JEeAg8uOM3SYDDs3"
+    }
   ]
+  
 
   export const seniorThesisLinks : Array<string> = [
     'https://i.imgur.com/b9cJn4Ll.png',
