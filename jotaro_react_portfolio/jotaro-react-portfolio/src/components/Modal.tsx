@@ -26,7 +26,8 @@ export default function Modal(props: modalProps) {
               {props.content.includes('mp4') || props.content.includes('youtube') ? (
                 <>
                   {/* <video src={props.content} controls className='modalImg'/> */}
-                  <iframe className='modal-yt' src="https://www.youtube.com/embed/3OYGcy0-UH0?si=U8f_8fjWmM_Xa0Ul" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe className='modal-yt' src="https://www.youtube.com/embed/3OYGcy0-UH0?si=U8f_8fjWmM_Xa0Ul" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                  <h3 className='text-3xl'></h3>
                 </>
                 ) : (
                 <img src={modifiedContent} className='modalImg' alt='Modal Content' />
