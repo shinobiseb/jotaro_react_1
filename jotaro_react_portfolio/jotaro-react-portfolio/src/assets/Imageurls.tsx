@@ -53,7 +53,7 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     },
     { 
       name: 'morphing animation',
-      url:'https://live.staticflickr.com/video/53037693563/31e8ff810c/360p.mp4?s=eyJpIjo1MzAzNzY5MzU2MywiZSI6MTY4OTAzMjU3MCwicyI6IjFhMDcwNTNmMzVjZDAxOGQyZGVkNWU3N2RhN2FiMmQyNTc4MTg3MTUiLCJ2IjoxfQ', 
+      url:'https://youtu.be/V6GJfcXjPNQ', 
       thumbnail: 'https://i.imgur.com/EZxtAfa.jpg',
       youtube: '',
     },
