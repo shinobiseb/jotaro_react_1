@@ -35,19 +35,19 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
   }[]  = [
     { 
       name: 'flash warning',
-      url:'', 
+      url:'https://youtu.be/k8bRClS3poM', 
       thumbnail: 'https://i.imgur.com/KcYwKDYm.png',
       youtube: 'https://youtu.be/k8bRClS3poM',
     },
     { 
       name: 'tree animation',
-      url:'', 
+      url:'https://youtu.be/bnegMvRivXw', 
       thumbnail: 'https://i.imgur.com/z5Chwpd.jpg',
       youtube: 'https://youtu.be/bnegMvRivXw',
     },
     { 
       name: 'Moana',
-      url:'', 
+      url:'https://youtu.be/bnegMvRivXw', 
       thumbnail: 'https://i.imgur.com/4eN0FZ7.jpg',
       youtube: 'https://youtu.be/bnegMvRivXw',
     },
@@ -59,7 +59,7 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     },
     { 
       name: 'Bound Animation',
-      url:'', 
+      url:'https://youtu.be/4pQJx6tCYPQ?si=rRyrUmYuvQ4lDDVd', 
       thumbnail: 'https://i.imgur.com/VSnW6o1.png',
       youtube: 'https://youtu.be/4pQJx6tCYPQ?si=rRyrUmYuvQ4lDDVd',
     },
@@ -77,37 +77,37 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     },
     { 
       name: 'popsicle animation',
-      url:'', 
+      url:'https://youtu.be/c0DnrK9dre4', 
       thumbnail: 'https://i.imgur.com/AdLSTq3m.jpg',
       youtube: 'https://youtu.be/c0DnrK9dre4',
     },
     { 
       name: 'Game Grumps Typography',
-      url:'', 
+      url:'https://youtu.be/mBb8piNWoRQ', 
       thumbnail: 'https://i.imgur.com/Z45iH7pm.jpg',
       youtube: 'https://youtu.be/mBb8piNWoRQ',
     },
     { 
       name: 'scared white boy',
-      url: '', 
+      url: 'https://youtu.be/KpQcFjy8n6w', 
       thumbnail: 'https://i.imgur.com/KFa1kVQm.jpg',
       youtube: 'https://youtu.be/KpQcFjy8n6w'
     },
     { 
       name: 'Mortem',
-      url: '', 
+      url: 'https://youtu.be/Pf0VR0OXTSo', 
       thumbnail: 'https://i.imgur.com/uaOiyuWm.jpg',
       youtube: 'https://youtu.be/Pf0VR0OXTSo',
     },
     { 
       name: 'Mario Animation',
-      url: '', 
+      url: 'https://youtu.be/VXHV0NDraNE', 
       thumbnail: 'https://i.imgur.com/jbIOer6m.jpg',
       youtube: 'https://youtu.be/VXHV0NDraNE'
     },
     { 
       name: 'Dahlia Animatic',
-      url: '', 
+      url: 'https://youtu.be/Nc0_p7nLMXo', 
       thumbnail: 'https://i.imgur.com/Qqr3lgo.jpg',
       youtube: 'https://youtu.be/Nc0_p7nLMXo'
     },
