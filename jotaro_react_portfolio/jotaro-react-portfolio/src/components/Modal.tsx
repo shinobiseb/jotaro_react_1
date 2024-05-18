@@ -16,15 +16,17 @@ export default function Modal(props: modalProps) {
     props.setState(false);
   };
 
-  console.log(props)
 
   return props.state ? (
     <AnimatePresence initial={false}>
       <motion.div
         className='fixed z-10'>
         <div className='flex flex-col items-center justify-centerh-screen w-screen h-screen overlay flex align-center justify-center' onClick={handleClose}>
-              {props.content.includes('mp4') || props.content.includes('youtu.be') ? (
+              {props.content.includes('mp4') || props.content.includes('youtu.be') || props.content.includes('youtube') ? (
+                
+                
                 <>
+                {console.log(props)}
                   {/* <video src={props.content} controls className='modalImg'/> */}
                   <iframe className='modal-yt' src={props.content} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </>
