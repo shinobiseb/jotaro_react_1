@@ -59,9 +59,9 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     },
     {
       "name": "Bound Animation",
-      "url": "https://youtu.be/4pQJx6tCYPQ?si=HzRr4SeT6ylzLFRj",
+      "url": "https://www.youtube.com/embed/4pQJx6tCYPQ?si=ACvUwdKVNLRjz29k",
       "thumbnail": "https://i.imgur.com/VSnW6o1.png",
-      "youtube": "https://youtu.be/4pQJx6tCYPQ?si=HzRr4SeT6ylzLFRj"
+      "youtube": "https://www.youtube.com/embed/4pQJx6tCYPQ?si=ACvUwdKVNLRjz29k"
     },
     {
       "name": "Cafe au Fate",
@@ -71,9 +71,9 @@ function imgSpawner(arr : Array<object> | Array<string>, container : HTMLElement
     },
     {
       "name": "experimental animation",
-      "url": "https://www.youtube.com/embed/4pQJx6tCYPQ?si=ACvUwdKVNLRjz29k",
+      "url": "Not in Service",
       "thumbnail": "https://i.imgur.com/siDN1e0m.jpg",
-      "youtube": "https://www.youtube.com/embed/4pQJx6tCYPQ?si=ACvUwdKVNLRjz29k"
+      "youtube": "Not in Service"
     },
     {
       "name": "popsicle animation",
